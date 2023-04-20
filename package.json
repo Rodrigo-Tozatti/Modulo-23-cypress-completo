@@ -1,0 +1,23 @@
+{
+  "name": "modulo-23-cypress-completo",
+  "version": "1.0.0",
+  "description": "Modulo 23 - Cypress completo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy.open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-completo.git"
+  },
+  "author": "Rodrigo Tozatti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-completo/issues"
+  },
+  "homepage": "https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-completo#readme",
+  "dependencies": {
+    "cypress": "^12.10.0"
+  }
+}
