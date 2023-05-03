@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('lupa', () => {
+    cy.xpath(`//*[@id="tbay-header"]/div/div/div/div[2]/div/div[4]`).click()
+})
+
+Cypress.Commands.add('preencher_pesquisa', (produto) => {
+    cy.get('#tbay-header .tbay-search').type(produto)
+})
+
+Cypress.Commands.add('lista_produto', () => {
+    cy.get('#ui-id-1')
+})

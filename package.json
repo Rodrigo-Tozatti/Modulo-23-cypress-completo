@@ -1,7 +1,7 @@
 {
-  "name": "modulo-23-cypress-completo",
+  "name": "modulo-23-cypress-intercept",
   "version": "1.0.0",
-  "description": "Modulo 23 - Cypress completo",
+  "description": "Modulo 23 Intercept",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-completo.git"
+    "url": "git+https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-intercept.git"
   },
   "author": "Rodrigo Tozatti",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-completo/issues"
+    "url": "https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-intercept/issues"
   },
-  "homepage": "https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-completo#readme",
+  "homepage": "https://github.com/Rodrigo-Tozatti/Modulo-23-cypress-intercept#readme",
   "dependencies": {
-    "cypress": "^12.10.0"
+    "cypress": "^12.11.0"
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3"
   }
 }
