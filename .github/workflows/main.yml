@@ -1,0 +1,24 @@
+name: Projeto-cypress-Page-Ojects
+on:
+  push:
+    branches: [main] # ---> escolher a banch que será executada
+  
+jobs:
+  Teste-cypress-intercept: #Nome do teste (ou projeto)
+    runs-on: ubuntu-22.04
+   
+    steps:
+      - name: Baixar projeto # ---> baixar o projeto e instalar as dependencias (pesquisar na lateral por: Cypress.io)
+        uses: actions/checkout@v3
+        
+      - uses: actions/setup-node@v3 # ---> startar node (pesquisar na lateral por: Setup Node.js enviroment)
+        with:
+          node-version: 18
+
+      - name: Executar cypress run # ---> executar o projeto (pesquisar na lateral por: Cypress.io)
+        uses: cypress-io/github-action@v5
+        
+        continue-on-error: true # ---> caso o apresente erro não para o teste
+        with:
+          browser: chrome # ---> rodar com o chrome
+        
