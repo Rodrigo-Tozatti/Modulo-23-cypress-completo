@@ -21,4 +21,10 @@ jobs:
         continue-on-error: true # ---> caso o apresente erro não para o teste
         with:
           browser: chrome # ---> rodar com o chrome
+          
+      - name: Gerar relatórios # ---> página github pages actions: https://github.com/peaceiris/actions-gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./mochawesome-report
         
