@@ -1,0 +1,25 @@
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  Projeto-cypress-intercept: # npme do teste
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3 # ---> no Marketplace pesquise por node entre em setup node enviroment e pegue esse trecho de código
+        with:
+          node-version: 18
+      - name: Iniciando Cypress # ---> no Marketplace pesquise por cypress entre em cypress.io e pegue esse trecho de código
+        uses: cypress-io/github-action@v5
+        continue-on-error: true # ---> Para continuar o teste mesmo ocorrendo um erro.
+        with:
+          install-command: npm install
+          browser: chrome
+      - name: Publicando relatório
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./mochawesome-report
+            
