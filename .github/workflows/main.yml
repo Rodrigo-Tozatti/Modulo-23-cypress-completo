@@ -17,6 +17,15 @@ jobs:
         with:
           install-command: npm install
           browser: chrome
+          
+      - uses: michaelhenry/create-report@v2
+        name: Criar relatório html
+        with:
+          title: "HTML report"
+          path: samples/sample.html
+          format: html        
+          
+          
       #- name: Publicando relatório
       #  uses: peaceiris/actions-gh-pages@v3
       #  with:
