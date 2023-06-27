@@ -17,19 +17,7 @@ jobs:
         with:
           install-command: npm install
           browser: chrome
-          
-  create-report:
-      name: Report using ${{ matrix.os }}
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v2
-      - uses: michaelhenry/create-report@v2
-        name: create report from html
-        with:
-          title: "HTML report"
-          path: samples/sample.html
-          format: html       
-          
+
           
       #- name: Publicando relatório
       #  uses: peaceiris/actions-gh-pages@v3
