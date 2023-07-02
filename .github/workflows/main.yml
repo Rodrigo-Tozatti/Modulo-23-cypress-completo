@@ -17,9 +17,11 @@ jobs:
         with:
           install-command: npm install
           browser: chrome
-      - name: Publicando relatório
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./mochawesome-report
+
+          
+      #- name: Publicando relatório
+      #  uses: peaceiris/actions-gh-pages@v3
+      #  with:
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
+      #    publish_dir: ./mochawesome-report
             
