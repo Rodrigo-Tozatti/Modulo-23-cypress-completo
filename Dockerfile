@@ -13,7 +13,7 @@ RUN apt-get install -y wget gnupg && \
 
 WORKDIR /home/cypress
 
-COPY . /home/cypress/
+COPY . /home/cypress_intercept/
 
 RUN npm install
 
